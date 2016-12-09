@@ -33,7 +33,7 @@ function start(url, iter)
             }
 
             links=body.match(linkRegex);
-            if (typeof(links) != null) {
+            if (typeof(links) != null && links) {
                 links=getOnly(links);
                 for(i=0; i<links.length; i++)
                 {
